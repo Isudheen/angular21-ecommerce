@@ -1,4 +1,4 @@
-import { Component, computed, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatButton, MatIconButton } from '@angular/material/button'
 import { MatIcon } from '@angular/material/icon'
 import { RouterLink } from '@angular/router';
@@ -13,5 +13,4 @@ import { ECommerceStore } from '../../ecommerce-store';
 })
 export class HeaderActions {
   readonly store = inject(ECommerceStore);
-  readonly wishlistCount = computed(() => this.store.wishListItems().length);
 }
