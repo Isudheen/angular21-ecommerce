@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [{
  path: '',
  pathMatch: 'full',
- redirectTo: 'products/all',
+ redirectTo: 'products/All',
 },
 {
  path: 'products/:category',
