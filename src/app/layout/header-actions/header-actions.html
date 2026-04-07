@@ -2,7 +2,8 @@
  <button matIconButton routerLink="/wishlist" [matBadge]="store.wishlistCount()" [matBadgeHidden]="!store.wishlistCount()">
   <mat-icon>favorite</mat-icon>
  </button>
- <button matIconButton>
+ <button matIconButton routerLink="/cart" [matBadge]="store.cartItemCount()"
+ [matBadgeHidden]="!store.cartItemCount()">
   <mat-icon>shopping_cart</mat-icon>
  </button>
  <button matButton>Sign In</button>
